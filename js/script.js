@@ -3,8 +3,8 @@ let amountElement = document.querySelector(".js-amount");
 let currencyElement = document.querySelector(".js-currency");
 let resultElement = document.querySelector(".js-result");
 
-let rateEUR = 4;
-let rateUSD = 5;
+let rateEUR = 4.47;
+let rateUSD = 4.22;
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -17,11 +17,11 @@ formElement.addEventListener("submit", (event) => {
     switch (currency) {
 
         case "EUR":
-            result = amount * rateEUR;
+            result = amount / rateEUR;
             break;
 
         case "USD":
-            result = amount * rateUSD;
+            result = amount / rateUSD;
             break;
     }
 

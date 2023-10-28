@@ -1,27 +1,24 @@
 .form {
-    background-color: rgb(60, 155, 218);
+    background-color: rgb(11, 50, 77);
     max-width: 800px;
     padding: 30px;
     font-size: 25px;
-}
+    color: #ddd;
+    
+    }
 
-.form__labelText {
-    background-color: #444;
-    color: #bbb;
-    font-size: 25px;
-    padding: 10px;
+.form__title {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .legend {
-    background-color: #888;
+    background-color: hsl(205, 56%, 13%);
     padding: 20px;
     font-size: 30px;
-}
-
-.zloty {
-    background-color: #888;
-    font-size: 25px;
-    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 255, 0, 0.534);
+    border-radius: 12px;
+    width: 100%;
 }
 
 .result {
@@ -29,18 +26,30 @@
     padding: 30px;
     color: #ddd;
     font-size: 35px;
-    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    box-shadow: 2px 2px 2px red;
 }
 
 .button {
+    background-image: url("../images/share.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #eee;
     padding: 40px;
     width: 100%;
-    font-size: 30px;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px #222;
     border-radius: 12px;
     border: none;
-    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    box-shadow: 2px 2px 2px red;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 30px rgb(207, 248, 23);
+    color: #ec0b0b;
+    text-shadow: 1px 1px 15px #02020a;
 }
 
 .result {
-    text-shadow: 3px 3px 6px rgb(32, 35, 206);
+    text-shadow: 3px 3px 12px rgb(32, 35, 206);
+    border-radius: 12px;
 }

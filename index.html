@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator walut</title>
     <meta property="og:image" content="images/share.jpg">
-    <link href="CSS/style.css" rel="stylesheet">
-    <link href="CSS/form.css" rel="stylesheet">
-    <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
 </head>
 
 <body class="body">
     <form class="form js-form">
-        <label>Twoje dane
-            <p>Wprowadź kwote w PLN
-                <input type="number" class="js-amount" name="amount" autofocus>
+        <legend class="legend">
+            <span class="form__title">Twoje dane</span>
+            <p>Kwota
+                <input type="number" class="js-amount" name="amount" placeholder="wprowadź tutaj" autofocus> zł PLN
             </p>
             <p>
                 <label>Wybierz walutę
@@ -28,12 +30,14 @@
                     </select>
                 </label>
             </p>
-        </label>
+        </legend>
         <p><button class="button">Policz</button></p>
         <p class="result">
-            <span class="result js-result">?</span>
+            <span class="js-result">?</span>
         </p>
+        <p>*dane z dnia 29.10.2023</p>
     </form>
+
 </body>
 
 </html>
