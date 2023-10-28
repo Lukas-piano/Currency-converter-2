@@ -4,6 +4,7 @@
     padding: 30px;
     font-size: 25px;
     color: #ddd;
+    margin: 0 auto;
     
     }
 
@@ -26,27 +27,35 @@
     padding: 30px;
     color: #ddd;
     font-size: 35px;
-    box-shadow: 2px 2px 2px red;
+    box-shadow: 1px 1px 1px red;
 }
 
-.button {
+.form__button {
     background-image: url("../images/share.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
-    color: #eee;
+    color: #360101;
     padding: 40px;
     width: 100%;
     font-size: 80px;
-    text-shadow: 5px 5px 5px #222;
+    text-shadow: -2px -2px 2px #d6e9d2;
     border-radius: 12px;
     border: none;
     box-shadow: 2px 2px 2px red;
 }
 
-.button:hover {
+.form__button:hover {
     box-shadow: 1px 1px 30px rgb(207, 248, 23);
     color: #ec0b0b;
     text-shadow: 1px 1px 15px #02020a;
+}
+
+.form__button:active {
+    opacity: 40%;
+}
+
+.form__button--reset {
+    padding: 20px;
 }
 
 .result {
